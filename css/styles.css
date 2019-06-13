@@ -1,0 +1,18 @@
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    display: grid;
+    margin: 0;
+    padding: 1em;
+    grid-template-columns: repeat(auto-fill,250px);
+}
+.item
+{
+    border-radius: 5px;
+    padding: 10px;
+    background: #f2f2f2;
+}
