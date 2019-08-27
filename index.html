@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css"/>
     <title>Adán Dueñas Escobar</title>
 </head>
 <body>
@@ -35,10 +36,102 @@
         </div>
         </section>
     </div>
-    <section class="experiencia" id="experiencia">
-        <div class="container">
-        </div>
-    </section>
+    <div class="container">
+        <section class="experiencia" id="experiencia">
+                <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="modal1">
+                        <img src="img/ed_icon.png" alt="" width="60" height="60">
+                        <h1>ecodomus</h1>
+                            <div class="modal-content">
+                              <p>Creador de la imagen corporativa de la empresa /
+                              Gestor e instalador de diversos proyectos de energía solar fotovoltaica con interconexión a la red /
+                              Supervisor de distintos proyectos de electricidad para distintas empresas /
+                              Gestor de proyectos de Domótica /
+                              Supervisor de instalaciones de calentadores solares</p>
+                            </div>
+                            <div class="modal-buttons">
+                              <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+                        </div>
+                    </div>
+                          <div class="modal" id="modal2">
+                                <h1>Web Design</h1>
+                                <div class="modal-content">
+                                  <img src="" alt="" width="170" height="256">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+                                </div>
+                                <div class="modal-buttons">
+                                  <button class="modal-btn primary" id="hide-modal2">Cerrar Modal</button>
+                                </div>
+                              </div>
+                        <div class="modal" id="modal3">
+                                <h1>Graphic Design</h1>
+                                <div class="modal-content">
+                                  <img src="" alt="" width="170" height="256">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+                                </div>
+                                <div class="modal-buttons">
+                                  <button class="modal-btn primary" id="hide-modal3">Cerrar Modal</button>
+                                </div>
+                              </div>
+                        <div class="modal" id="modal4">
+                                <h1>Apps Development</h1>
+                                <div class="modal-content">
+                                  <img src="" alt="" width="170" height="256">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+                                </div>
+                                <div class="modal-buttons">
+                                  <button class="modal-btn primary" id="hide-modal4">Cerrar Modal</button>
+                                </div>
+                              </div>
+                        <div class="modal" id="modal5">
+                                <h1>Multimedia Production</h1>
+                                <div class="modal-content">
+                                  <img src="" alt="" width="170" height="256">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+                                </div>
+                                <div class="modal-buttons">
+                                  <button class="modal-btn primary" id="hide-modal5">Cerrar Modal</button>
+                                </div>
+                              </div>
+                        <div class="modal" id="modal6">
+                                <h1>Community Management</h1>
+                                <div class="modal-content">
+                                  <img src="" alt="" width="170" height="256">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+                                </div>
+                                <div class="modal-buttons">
+                                  <button class="modal-btn primary" id="hide-modal6">Cerrar Modal</button>
+                                </div>
+                              </div>
+                              <div class="experiencia-title">
+                                  <h2>Experiencia</h2>
+                              </div>
+            <div class="icon" id="icon1">
+                <h2>ecodomus</h2>
+                <p>2013 - Presente</p>                
+            </div>
+            <div class="icon" id="icon2">
+                <h2>Andal Publicidad</h2>
+                <p>2015 - Presente</p>                
+            </div>
+            <div class="icon" id="icon3">
+                <h2>Andal Constelaciones</h2>
+                <p>2017 - Presente</p>
+            </div>
+            <div class="icon" id="icon4">
+                <h2>Akamba Tech</h2>
+                <p>2018 - Presente</p>
+            </div>
+            <div class="icon" id="icon5">
+                <h2>Andal Minerales</h2>
+                <p>2017 - Presente</p>
+            </div>      
+            <div class="icon" id="icon6">
+                <h2>Digita DM SA de CV</h2>
+                <P>2010 - 2013</P>
+            </div>
+        </section>
+    </div>
     <section class="educacion" id="educación">
         <div class="container"></div>
     </section>
@@ -52,5 +145,98 @@
               </div>
             </div>
     </section>
+    <script>
+            const $modal1 = document.getElementById('modal1');
+            const $modal2 = document.getElementById('modal2');
+            const $modal3 = document.getElementById('modal3');
+            const $modal4 = document.getElementById('modal4');
+            const $modal5 = document.getElementById('modal5');
+            const $modal6 = document.getElementById('modal6');
+            const $overlay = document.getElementById('overlay');
+            const $icon1 = document.getElementById('icon1');
+            const $icon2 = document.getElementById('icon2');
+            const $icon3 = document.getElementById('icon3');
+            const $icon4 = document.getElementById('icon4');
+            const $icon5 = document.getElementById('icon5');
+            const $icon6 = document.getElementById('icon6');
+            const $hidemodal = document.getElementById('hide-modal');
+            const $hidemodal2 = document.getElementById('hide-modal2');
+            const $hidemodal3 = document.getElementById('hide-modal3');
+            const $hidemodal4 = document.getElementById('hide-modal4');
+            const $hidemodal5 = document.getElementById('hide-modal5');
+            const $hidemodal6 = document.getElementById('hide-modal6');
+        
+            $icon1.addEventListener('click', (event) =>
+                {
+                     console.log(event);
+                    $modal1.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal.addEventListener('click', (event) => 
+                {
+                    $modal1.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+        
+            $icon2.addEventListener('click', (event) =>
+                {
+                    // console.log(event);
+                    $modal2.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal2.addEventListener('click', (event) => 
+                {
+                    $modal2.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+        
+            $icon3.addEventListener('click', (event) =>
+                {
+                    // console.log(event);
+                    $modal3.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal3.addEventListener('click', (event) => 
+                {
+                    $modal3.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+        
+            $icon4.addEventListener('click', (event) =>
+                {
+                    // console.log(event);
+                    $modal4.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal4.addEventListener('click', (event) => 
+                {
+                    $modal4.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+        
+            $icon5.addEventListener('click', (event) =>
+                {
+                    // console.log(event);
+                    $modal5.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal5.addEventListener('click', (event) => 
+                {
+                    $modal5.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+        
+            $icon6.addEventListener('click', (event) =>
+                {
+                    // console.log(event);
+                    $modal6.style.animation = 'modalIn .8s forwards';
+                    $overlay.classList.add('active');
+                });
+            $hidemodal6.addEventListener('click', (event) => 
+                {
+                    $modal6.style.animation = 'modalOut .8s forwards';
+                    $overlay.classList.remove('active');
+                });
+            </script>
 </body>
 </html>
