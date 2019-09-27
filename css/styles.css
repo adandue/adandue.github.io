@@ -2,16 +2,11 @@ body
 {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-}
-.container
-{
-    max-width: 1024px;
-    max-height: 300px;
-    margin: 0 auto;
+    background: linear-gradient(to bottom right, #2f3a57, #35609c);
 }
 .header
 {
-    background: #2f3a57;
+    /* background: #2f3a57; */
     color: white;
     padding: 1em;
     display: flex;
@@ -60,18 +55,21 @@ ol,ul
 .hero
 {
     height: 300px;
-    background: #2f3a57;
+    /* background: #2f3a57; */
     justify-items: center;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1em;
-    grid-template-areas: "hero-left hero-right"
+    grid-template-areas: "hero-left hero-right";
 }
 .hero-left
 {
     grid-area: hero-left;
     max-height: 250px;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
 }
 .hero-right
 {
@@ -89,36 +87,38 @@ ol,ul
 }
 .experiencia
 {
-    background: #fff;
+    /* background: #fff; */
     color: #fff;
     height: 300px;
     padding: 1em;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 15px;
     justify-items: center;
     text-align: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    "experiencia-title experiencia-title experiencia-title"
-    "icon1 icon2 icon3"
-    "icon1 icon2 icon3"
-    "icon4 icon5 icon6"
-    "icon4 icon5 icon6";
+    "experiencia-title experiencia-title"
+    "icon1 icon2 "
+    "icon1 icon2"
+    "icon3 icon4"
+    "icon3 icon4";
 }
 .icon
 {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(to bottom right, #2f3a57, #35609c);
+    background-color: rgba(255, 255, 255, 0.05);
     font-size: 1em;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border: 2px solid white;
 }
 .experiencia-title
 {
     grid-area: experiencia-title;
-    color: #2f3a57;
+    /* color: #2f3a57; */
     font-size: 150%;
 }
 #icon1
@@ -144,4 +144,12 @@ ol,ul
 #icon6
 {
     grid-area: icon6;
+}
+@media (max-width: 712px) {
+    .hero {
+        height: 600px;
+        font-size: 50%;
+        justify-content: center;
+        grid-template-areas: "hero-left" "hero-right";
+    }
 }
