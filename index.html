@@ -26,53 +26,58 @@
         </header>
     <section class="hero">
         <div class="hero-left">
-            <h1>I'm Adán Dueñas Escobar, founder and collaborator of several compannies</h1>
+            <h1>I'm Adán Dueñas Escobar. Engineer and Director of Andal Minerales</h1>
         </div>
         <div class="hero-right">
-            <img src="img/foto-adan.png" class="hero-image" alt="">
+            <img src="img/foto-adan.png" class="hero-image" alt="foto Adan Dueñas Escobar">
         </div>
         </section>
         <section class="experiencia" id="experiencia">
-                <div class="overlay" id="overlay"></div>
-                <div class="modal" id="modal1">
-                    <img src="img/ed_icon.png" alt="logo-ecodomus" width="60" height="60">
-                    <h1>ecodomus</h1>
-                    <h3>Founder and CEO</h3>
-                    <div class="modal-content">
-                        <p>Creator of the corporate image of the company /
-                              Manager and installer of different solar energy on-grid projects with UL regulation /
-                              Supervisor of several electricity projects for different compannies /
-                              Home automation project manager /
-                              Solar heater installation supervisor</p>
-                            </div>
-                            <div class="modal-buttons">
-                                <button class="modal-btn primary" id="hide-modal">Close</button>
-                            </div>
-                        </div>
-                        <div class="modal" id="modal2">
-                                <img src="" alt="">
-                                <h1>Grupo Andal</h1>
-                                <h3>Administrative Director and Designer</h3>
-                                <div class="modal-content">
-                                    <p>Resposible for managing company resources, as well as accoounting before declaration / 
-                                        Group image designer
-                                    </p>
-                                </div>
-                                <div class="modal-buttons">
-                                    <button class="modal-btn primary" id="hide-modal2">Close</button>                                                                                  
-                                </div>
-                              </div>
-                        <div class="modal" id="modal3">
-                                <img src="img/akamba-icon.png" alt="logo-akamba-tech" width="60" height="60">
-                                <h1>Akamba Tech</h1>
-                                <h3>Co-Founder and frontend developer</h3>
-                                <div class="modal-content">
-                                  <p>Designer and cretor of 3D models for videogames<br>Videogames music compoder <br>Art 2D directo<br>Frontend developer: Web apps developer with HTML5 and CSS3 and Javscript</p>
-                                </div>
-                                <div class="modal-buttons">
-                                  <button class="modal-btn primary" id="hide-modal3">Cerrar Modal</button>
-                                </div>
-                              </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="modal" id="modal2">
+                <img src="./img/andal-minerales-logo.svg" alt="logo andal minerales" width="150">
+                <h1>Andal Minerales: Gypsum Minning</h1>
+                <h3>General Director</h3>
+                <div class="modal-content">
+                    <ul>
+                        <li>Responsible for managing company resources, as well as accoounting before declaration</li>
+                        <li>Group image designer (Logos, images for social media, advertising for events and clients)</li>
+                        <li>Responsible for negotiating with clients and suppliers</li>
+                        <li>Crisis management</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-btn primary" id="hide-modal2">Close</button>
+                </div>
+            </div>    
+            <div class="modal" id="modal3">
+                <img src="img/akamba-icon.png" alt="logo-akamba-tech" width="60" height="60">
+                <h1>Akamba Tech</h1>
+                <h3>Co-Founder and frontend developer</h3>
+                <div class="modal-content">
+                <p>Designer and cretor of 3D models for videogames<br>Videogames music compoder <br>Art 2D directo<br>Frontend developer: Web apps developer with HTML5 and CSS3 and Javscript</p>
+                </div>
+                <div class="modal-buttons">
+                <button class="modal-btn primary" id="hide-modal3">Close</button>
+                </div>
+            </div>
+            <div class="modal" id="modal1">
+                <img src="img/ed_icon.png" alt="logo-ecodomus" width="60" height="60">
+                <h1>ecodomus</h1>
+                <h3>Founder and CEO</h3>
+                <div class="modal-content">
+                    <ul>
+                        <li>Creator of the corporate image of the company</li>
+                        <li>Manager and installer of different solar energy on-grid projects with UL regulation</li>
+                        <li>Creator of projects of electricity and solar energy (Planning, engineering, budget, formalities)</li>
+                    </ul>
+                </div>
+                <div class="modal-buttons">
+                        <button class="modal-btn primary" id="hide-modal">Close</button>
+                </div>
+            </div>
+                
+                        
                         <div class="modal" id="modal4">
                                 <h1>Digita DM S.A. de C.V.</h1>
                                 <h3>Support Engineer</h3>
@@ -88,15 +93,15 @@
                               </div>
                               <div class="icon" id="icon1">
                                     <h2>ecodomus</h2>
-                                    <p>2013 - Present</p>                
+                                    <p>2013 - 2021</p>                
                                 </div>
                                 <div class="icon" id="icon2">
                                     <h2>Grupo Andal</h2>
-                                    <p>2015 - Present</p>                
+                                    <p>2020 - Present</p>                
                                 </div>
                                 <div class="icon" id="icon3">
                                     <h2>Akamba Tech</h2>
-                                    <p>2018 - Present</p>
+                                    <p>2018 - 2021</p>
                                 </div>
                                 <div class="icon" id="icon4">
                                     <h2>Digita DM S. A. de C. V.</h2>
@@ -208,7 +213,7 @@
         
             $icon1.addEventListener('click', (event) =>
                 {
-                     console.log(event);
+                    //console.log(event);
                     $modal1.style.animation = 'modalIn .8s forwards';
                     $overlay.classList.add('active');
                 });
